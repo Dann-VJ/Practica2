@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Nombre del programa: [SA] Práctica 2.
+Autor: Daniel Vázquez Joaquín.
+Materia: DAPPS.
+Tarea: [SA] Práctica 2.
+Fecha: 20/02/22.
+Descripción: Es la interfaz de un menú.
+
+Contenido:
+El archivo contiene los siguientes elementos:
+LinearLayout (vertical)
+TableLayout
+TableRow
+Button
+-->
+<!--
+Se agregó LineaLayout para agrupar todo el contenido que se
+encuentre en el
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="12">
+
+        <!--
+        Creamos un Layout con un peso de 3 de
+        todo el viewport
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="3">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="12">
+
+                        <TableRow android:layout_weight="12">
+                                <!--
+                                Se agregan los botones con un color y icono
+                                 -->
+                                <Button
+                                    android:text="AUTOMOTRIZ"
+                                    android:backgroundTint="#34BC0E"
+                                    android:drawableTop="@drawable/car"
+                                    android:layout_width="6dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"/>
+                                <Button
+                                    android:text="CALZADO Y ROPA"
+                                    android:backgroundTint="#104CC5"
+                                    android:drawableTop="@drawable/shop2"
+                                    android:layout_width="6dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"/>
+                        </TableRow>
+                </TableLayout>
+
+        </LinearLayout>
+
+        <!--
+        Creamos un Layout con un peso de 3 de
+        todo el viewport
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="3">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="12">
+
+                        <TableRow android:layout_weight="12">
+                                <!--
+                                Se agregan los botones con un color y icono
+                                 -->
+                                <Button
+                                    android:text="DEPORTIVO"
+                                    android:backgroundTint="#FF5722"
+                                    android:drawableTop="@drawable/bicycle"
+                                    android:layout_width="6dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"/>
+                                <Button
+                                    android:text="ENTRETENIMINETO"
+                                    android:backgroundTint="#F44336"
+                                    android:drawableTop="@drawable/drama_masks"
+                                    android:layout_width="6dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"/>
+                        </TableRow>
+                </TableLayout>
+        </LinearLayout>
+
+        <!--
+        Creamos un Layout con un peso de 3 de
+        todo el viewport
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="3">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="12">
+
+                        <TableRow android:layout_weight="12">
+                                <!--
+                                Se agregan los botones con un color y icono
+                                 -->
+                                <Button
+                                    android:layout_width="6dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="RESTAURANTES"
+                                    android:drawableTop="@drawable/silverware_fork_knife"
+                                    android:backgroundTint="#FF9800"/>
+
+                                <Button
+                                    android:text="SALUD Y BELLEZA"
+                                    android:drawableTop="@drawable/bottle_tonic_plus"
+                                    android:backgroundTint="#3290C3"
+                                    android:layout_width="6dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"/>
+                        </TableRow>
+                </TableLayout>
+        </LinearLayout>
+
+        <!--
+        Creamos un Layout con un peso de 3 de
+        todo el viewport
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="3">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="12">
+
+                        <TableRow android:layout_weight="12">
+                                <!--
+                                Se agregan los botones con un color y icono
+                                 -->
+                                <Button
+                                    android:layout_width="6dp"
+                                    android:backgroundTint="#EC286A"
+                                    android:drawableTop="@drawable/emoticon_cool"
+                                    android:text="OTROS"
+
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"/>
+                                <Button
+                                    android:layout_width="6dp"
+                                    android:backgroundTint="#104CC5"
+                                    android:text="VER TODOS"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"/>
+                        </TableRow>
+                </TableLayout>
+        </LinearLayout>
+</LinearLayout>
